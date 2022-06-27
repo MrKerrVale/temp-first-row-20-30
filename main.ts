@@ -12,10 +12,10 @@ basic.forever(function () {
         }
         for (let x = 0; x <= 4; x++) {
             for (let y = 0; y <= 4; y++) {
-                if (4 - y < Math.floor(temp / 10)) {
+                if (4 - y < Math.floor(temp / 5)) {
                     led.plot(x, y)
                 }
-                if (4 - y == Math.floor(temp / 10) && x < temp % 10 / 2) {
+                if (4 - y == Math.floor(temp / 5) && x < temp % 5) {
                     led.plot(x, y)
                 }
             }
